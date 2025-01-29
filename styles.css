@@ -49,15 +49,22 @@ body {
     width: 285px;
     margin-top: 30px;
     background-color: rgb(152, 182, 114);
-    justify-content: end;
-    display: flex;
-    align-items: center;
     font-size: 26px;
     font-family: 'Courier Prime', monospace;
+    overflow-x: auto;  
+    overflow-y: hidden; 
+    white-space: nowrap; 
+    padding: 5px;
+    display: block;
+    text-align: right; 
+    line-height: 82px;
 }
+
+
 #red_buttons{
     background-color: rgb(196, 1, 1);
 }
 #orange_buttons{
     background-color: chocolate;
 }
+

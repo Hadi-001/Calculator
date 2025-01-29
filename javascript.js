@@ -197,4 +197,38 @@ function noMoreThanTwo(){
     first_num = num_1.toString();
 }
 
-  
+document.addEventListener("keydown", (event) => {
+    let key = event.key;
+    // create a map that contains keys from the keyboard mapped to their functionality
+    const Map = {
+        "Enter": "=",
+        "c": "C",
+        "C": "C",
+        "Escape": "ON",
+        "+": "+",
+        "-": "-",
+        "*": "×",
+        "/": "÷",
+        "^": "^",
+        ".": ".",
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "7": "7",
+        "8": "8",
+        "9": "9"
+    };
+    if (Map[key]) {
+        let value = Map[key];
+        if (value === "C" || value === "ON") {
+            clear_function();
+        }
+        else {
+            take_input_and_verify(value);
+        }
+    }
+});
