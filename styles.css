@@ -1,7 +1,7 @@
 body {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: aliceblue;
     font-weight: 900;
 }
